@@ -1,0 +1,2 @@
+# connects midi devices when plugged in
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0763", ATTR{idProduct}=="2027", RUN+="/bin/sh /usr/local/bin/midiroutes.sh"
